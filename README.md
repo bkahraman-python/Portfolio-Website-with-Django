@@ -110,7 +110,7 @@ Use the provided template as a starting point and replace all placeholder values
 ```env
 SECRET_KEY=your-secret-key
 # Generate a secure one:
-# python -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())"
+# openssl rand -hex 32
 ```
 
 ### 8. Start Development Server
@@ -130,10 +130,10 @@ Visit `http://127.0.0.1:8000` in your browser to view your site.
 ### Manageable Content
 
 - **Homepage**  
-  Update the main hero section title and content (RichTextField support).
+  Update the main hero section title and content (RichTextField support)
 
 - **About**  
-  Edit your biography and professional story.  
+  Edit your biography and professional story 
   - Biography (rich text)  
   - **Skills** (inline editing – add/remove skills directly)  
   - Experience highlights
